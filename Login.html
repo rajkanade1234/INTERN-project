@@ -1,0 +1,30 @@
+<html>
+<body bgcolor="green">
+<script>  
+function validateform(){  
+var username=document.myform.username.value;  
+var password=document.myform.password.value;  
+  
+if (username==null || username==""){  
+  alert("UserName Required.");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password Required.");  
+  return false;  
+  }else{
+	alert("Successfully Login To The System!");
+	alert("Proceed Further!");
+  }  
+}  
+</script>  
+<body> 
+<b><h1>LOGIN</h1></b> 
+<form name="myform" method="post" action="" onsubmit="return validateform()" >  
+UserName: <input type="text" name="username"><br/><br/>  
+Password: <input type="password" name="password"><br/><br/>
+<input type="submit" value="Login">
+<a href="first.html">Proceed->-></a>  
+ </body>
+</html>
+
+

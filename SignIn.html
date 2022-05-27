@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="red">
+<script type="text/javascript">  
+function validateform(){  
+var name=document.myform.name.value;  
+var contact=document.myform.name.value; 
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+}else if(contact.length==10){  
+  alert("contact must be at least 10 characters long.");  
+  return false;  
+}else{
+	alert("SuccessFully Registered!");
+	}
+  
+}  
+</script>  
+<body>
+<i><h1>Event Management System</h1></i>  
+<form name="myform" method="post" action="" onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/><br/> 
+Contact: <input type="text" name="contact"><br/><br/>  
+Password: <input type="password" name="password"><br/><br/>  
+<input type="submit" value="Validate">
+<a href="Login.html">Proceed->-></a>
+</form>  
+</body>
+</html>
